@@ -8,19 +8,9 @@ func main() {
 	}
 }
 
-// func fib(n int) int {
-// 	if n <= 1 {
-// 		return 1
-// 	} else {
-// 		return fib(n-1) + fib(n-2)
-// 	}
-// }
-
 func fib2(n uint64) uint64 {
-	var res uint64
-	if n <= 1 {
-		res = 1
-	} else {
+	var res uint64 = 1
+	if n > 1 {
 		var a uint64 = 1
 		var b uint64 = 1
 		var i uint64 = 2

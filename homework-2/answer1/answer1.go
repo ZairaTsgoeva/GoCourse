@@ -6,11 +6,11 @@ func main() {
 	var num int
 	fmt.Println("Введите число")
 	fmt.Scanln(&num)
+	value := "нечетное"
 	if isEven(num) {
-		fmt.Println("Число четное")
-	} else {
-		fmt.Println("Число нечетное")
+		value = "четное"
 	}
+	fmt.Println("Число", num, value)
 }
 
 func isEven(num int) bool {

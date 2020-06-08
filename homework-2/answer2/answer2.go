@@ -6,11 +6,11 @@ func main() {
 	var num int
 	fmt.Println("Введите число")
 	fmt.Scanln(&num)
+	value := "не делится на 3"
 	if check(num) {
-		fmt.Println("Число делится на 3")
-	} else {
-		fmt.Println("Число не делится")
+		value = "делится на 3"
 	}
+	fmt.Println("Число", num, value)
 }
 
 func check(num int) bool {
